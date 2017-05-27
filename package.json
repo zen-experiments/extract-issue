@@ -1,0 +1,22 @@
+{
+  "name": "extract-issue",
+  "version": "1.0.0",
+  "description": "Webpack ExtractTextPlugin emitting all CSS files issue",
+  "scripts": {
+    "prebuild": "rimraf dist/",
+    "build": "webpack",
+    "prewatch": "rimraf dist/",
+    "watch": "webpack -w"
+  },
+  "devDependencies": {
+    "extract-text-webpack-plugin": "^2.1.0",
+    "node-sass": "^4.5.3",
+    "rimraf": "^2.6.1",
+    "webpack": "^2.6.1"
+  },
+  "dependencies": {
+    "css-loader": "^0.28.3",
+    "postcss-loader": "^2.0.5",
+    "sass-loader": "^6.0.5"
+  }
+}
