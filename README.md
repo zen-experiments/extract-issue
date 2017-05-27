@@ -28,7 +28,7 @@ The behavior is as expected (within this issue): only relevant JS file is emitte
 
 ## Installation
 
-1. `yarn install`
-2.`yarn watch`
+1. `yarn install`  
+2.`yarn watch`  
 3. change any SCSS file to see all being emitted all the time
 
