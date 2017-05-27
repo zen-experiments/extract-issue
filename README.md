@@ -4,6 +4,12 @@ When using ExtractTextPlugin to extract CSS, via `sass-loader`, `postcss-loader`
 
 The expectation is that only the relevant SCSS file is processed and updated.
 
+## Installation
+
+1. `yarn install`  
+2. `yarn watch`  
+3. change any SCSS file to see all being emitted all the time
+
 ## Explorations
 
 Some of these are just due diligence, of sorts, but mostly to eliminate some sort of misconfiguration on my part (at least partially).
@@ -25,10 +31,3 @@ The behavior is as expected (within this issue): only relevant JS file is emitte
 To test whether the issue is with loaders application, I've added `babel-loader` to JS chain and transferred `index.js` files to be ES6.
 
 The behavior is as expected (within this issue): only relevant JS file is emitted, while all CSS files are emitted, again.
-
-## Installation
-
-1. `yarn install`  
-2. `yarn watch`  
-3. change any SCSS file to see all being emitted all the time
-
