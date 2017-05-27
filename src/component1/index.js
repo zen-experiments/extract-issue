@@ -1,7 +1,5 @@
-'use strict';
+import './index.scss';
 
-require('./index.scss');
-
-module.exports = function component1() {
-    console.log('component 1');
+export default function component1() {
+    
 };

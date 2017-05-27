@@ -23,7 +23,13 @@ const config = {
         path: DEST
     },
     module: {
-        rules: [            
+        rules: [    
+            {
+                test: /\.js$/,
+                use: 'babel-loader',
+                include: SRC,
+                exclude: [NODE_MODULES]
+            },        
             {
                 test: /(\.scss|\.css)$/,
                 use: ExtractTextPlugin.extract({
